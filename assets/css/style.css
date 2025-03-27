@@ -79,7 +79,7 @@ body {
     text-align: center;
     color: var(--white);
 
-    & e {
+    & span {
         color: var(--yellow-500);
     }
 
@@ -220,7 +220,7 @@ body {
     gap: 32px;
     flex-direction: column;
 
-    & e {
+    & span {
         color: var(--purple-500);
     }
 
