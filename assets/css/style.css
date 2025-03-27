@@ -175,6 +175,7 @@ body {
     }
 
     & img {
+        max-width: 357px;
         object-fit: contain;
     }
 }
@@ -271,7 +272,6 @@ body {
     display: flex;
     gap: 10px;
     width: fit-content;
-    flex-wrap: wrap;
 }
 
 .chip {
@@ -373,11 +373,6 @@ body {
 
     .grid_2 {
         flex-wrap: nowrap;
-    }
-
-    .grid_3 img {
-        max-width: 357px !important;
-        width: 357px;
     }
 
     .grid_5 {
