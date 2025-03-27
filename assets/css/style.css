@@ -59,10 +59,12 @@ body {
 
 
 .grid_container {
+
     display: grid;
     gap: 32px;
     padding-inline: 16px;
     padding-top: 32px;
+    min-height: 100%;
 }
 
 .grid_1 {
@@ -102,7 +104,7 @@ body {
 
     & .followers,
     & .schedule {
-        overflow: scroll;
+        overflow: auto;
 
         &::-webkit-scrollbar {
             display: none;
@@ -163,7 +165,7 @@ body {
     padding: 32px;
     background-color: var(--purple-100);
     border-radius: 10px;
-    overflow: scroll;
+    overflow: auto;
     text-align: center;
 
     &::-webkit-scrollbar {
@@ -223,7 +225,7 @@ body {
     }
 
     & .ai_content {
-        overflow: scroll;
+        overflow: auto;
 
         &::-webkit-scrollbar {
             display: none;
