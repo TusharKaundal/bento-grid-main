@@ -15,7 +15,6 @@
 
 * {
     font-family: "DM Sans", sans-serif;
-
 }
 
 .text-preset-1 {
@@ -45,6 +44,7 @@
     letter-spacing: 0px;
     font-weight: 400;
 }
+
 
 body {
     min-height: 100vh;
@@ -82,7 +82,7 @@ body {
     }
 
     & img {
-        height: 32px;
+        max-height: 32px;
         object-fit: contain;
     }
 
@@ -149,7 +149,7 @@ body {
     background-color: var(--yellow-500);
 
     & img {
-        width: 208px;
+        max-width: 208px;
         object-fit: contain;
     }
 }
@@ -191,7 +191,7 @@ body {
     border-radius: 10px;
 
     & img {
-        width: 230px;
+        max-width: 230px;
         object-fit: contain;
     }
 }
@@ -206,8 +206,8 @@ body {
     border-radius: 10px;
 
     & img {
-        height: 66px;
-        width: 180px;
+        max-height: 66px;
+        max-width: 180px;
         object-fit: contain;
     }
 }
@@ -253,7 +253,7 @@ body {
     justify-content: center;
 
     & img {
-        width: 190px;
+        max-width: 190px;
         object-fit: contain;
     }
 }
@@ -262,15 +262,16 @@ body {
     background-color: var(--yellow-500);
 
     & img {
-        width: 208px;
+        max-width: 208px;
         object-fit: contain;
     }
 }
 
-.container {
+.chip_container {
     display: flex;
     gap: 10px;
     width: fit-content;
+    flex-wrap: wrap;
 }
 
 .chip {
@@ -388,7 +389,7 @@ body {
     }
 }
 
-@media (min-width:992px) {
+@media (min-width:1130px) {
     .grid_container {
         grid-template-columns: repeat(4, 256px);
         grid-template-rows: repeat(3, 256px);
@@ -403,9 +404,6 @@ body {
 
     .grid_2 {
         grid-area: element4;
-
-
-
     }
 
     .grid_3 {
@@ -427,8 +425,92 @@ body {
     .grid_6 {
         grid-area: element1;
         flex-direction: column;
-
-
-
     }
+}
+
+@media (max-width: 360px) {
+    body {
+        align-items: flex-start;
+    }
+
+    /* .grid_container {
+        margin-inline: 10px;
+        margin-top: 20px;
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .grid_1,
+    .grid_2,
+    .grid_3,
+    .grid_4,
+    .grid_5,
+    .grid_6 {
+        padding: 16px;
+        gap: 16px;
+        text-align: center;
+    }
+
+    .text-preset-1 {
+        font-size: clamp(32px, 4vw, 48px);
+        letter-spacing: -1px;
+    }
+
+    .text-preset-2 {
+        font-size: clamp(24px, 4vw, 32px);
+        letter-spacing: -1px;
+    }
+
+    .text-preset-3 {
+        font-size: clamp(20px, 4vw, 26px);
+        letter-spacing: -1px;
+    }
+
+    .grid_2,
+    .grid_6 {
+        flex-direction: column;
+        gap: 16px;
+    }
+
+    .followers,
+    .schedule,
+    .post,
+    .ai_content {
+        flex-basis: auto;
+        height: auto;
+    }
+
+    .grid_4 {
+        flex-direction: column;
+    }
+
+    .grid_5 {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .grid_5 img {
+        max-width: 120px;
+        max-height: 50px;
+    }
+
+    .chip {
+        width: 140px;
+        padding: 8px;
+    }
+
+    .chip_img {
+        width: 35px;
+        height: 35px;
+    }
+
+    .chip_username {
+        font-size: 14px;
+    }
+
+    .chip_follower {
+        font-size: 10px;
+    } */
 }
